@@ -14,7 +14,7 @@ You can install the package using npm:
 
 You can create custom errors by importing the CustomError class and extending it:
 
-> `const { CustomError } = require('@ticketscx/common');
+> const { CustomError } = require('@ticketscx/common');
 >
 > class NotFoundError extends CustomError {
 > statusCode = 404;
@@ -27,7 +27,7 @@ You can create custom errors by importing the CustomError class and extending it
 > serializeErrors() {
 > return [{ message: this.message }];
 > }
-> }`
+> }
 
 ### Error Handler Middleware
 
