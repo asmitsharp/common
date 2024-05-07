@@ -1,8 +1,12 @@
 import { Subjects } from './subjects';
 
-export interface ExpirationCompleteEvent {
-  subject: Subjects.ExpirationComplete;
+export interface OrderCancelledEvent {
+  subject: Subjects.OrderCancelled;
   data: {
-    orderId: string;
+    id: string;
+    version: number;
+    ticket: {
+      id: string;
+    };
   };
 }
